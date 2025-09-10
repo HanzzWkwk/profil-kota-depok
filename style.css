@@ -1,0 +1,125 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    text-decoration: none;
+    flex-wrap: nowrap;
+}
+* {
+    box-sizing: border-box;
+}
+aside {
+    float: right;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    background-color: rgb(0, 177, 208);
+    flex-direction: column;
+    width: 20%;
+    margin-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 2px;
+    transform: scale(1);
+}
+aside:hover {
+    transform: scale(1.1);
+    background-color: white;
+    transition-duration: 0.4s;
+}
+aside p {
+    color: azure;
+}
+aside p:hover {
+    color: rgb(0, 153, 180);
+    transition-duration: 0.4s;
+}
+aside img {
+    max-width: 185px;
+    padding: 5px;
+    padding-top: 15px;
+}
+header {
+    display: inline;
+    flex-direction: row;
+    background-color: rgb(0, 153, 180);
+    text-decoration: none;
+}
+h2 {
+    color: rgb(0, 153, 180);
+}
+h1 {
+    background-color: rgb(0, 153, 180);
+    color: azure;
+    margin: 0px;
+    padding: 100px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+nav li{
+    color: azure;
+    font-weight: 700;
+    display: inline;
+    flex-wrap: wrap;
+    -ms-flex-align: start;
+    list-style-type: none;
+    text-decoration-thickness: 0px;
+    padding: 50px 50px;
+    padding-top: 21px;
+    padding-bottom: 22px;
+    transform: scale(1);
+}
+nav li:hover {
+    background-color: azure;
+    color: rgb(0, 177, 208);
+    transform: scale(1.2);
+    transition-duration: 0.4s;
+}
+nav {
+    background-color: rgb(0, 120, 141);
+    padding: 5px;
+    flex-direction: column;
+    position: sticky;
+    top: 0%;
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+main {
+    padding: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+article {
+    float: left;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 75%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 10);
+    border-radius: 20px;
+    padding-right: 0px;
+    flex: 5;
+}
+article p, h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer {
+    padding: 20px;
+    color: azure;
+    background-color: rgb(0, 153, 180);
+}
+@media screen and (max-width: 558px) {
+  header nav li {
+    flex-direction: column;
+  }
+}
+main #content {
+    flex-direction: column;
+}
