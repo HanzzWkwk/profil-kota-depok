@@ -10,6 +10,7 @@ body {
 aside {
     float: right;
     border-radius: 10px;
+    overflow: hidden;
     flex-wrap: wrap;
     flex-direction: row-reverse;
     background-color: rgb(0, 177, 208);
@@ -122,4 +123,5 @@ footer {
 }
 main #content {
     flex-direction: column;
+
 }
